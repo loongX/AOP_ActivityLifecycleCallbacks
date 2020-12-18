@@ -7,6 +7,7 @@ buildscript {
 //        maven { url 'https://dl.bintray.com/xueshanshan/maven/' }
         google()
         jcenter()
+        maven{url 'http://maven.aliyun.com/nexus/content/groups/public/'}
     }
     dependencies {
         classpath 'com.star.plugin:aop-plugin:0.0.1'
@@ -22,6 +23,14 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.google.com' }
+
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven { url'https://maven.aliyun.com/repository/public/' }
+        maven { url'https://maven.aliyun.com/repository/google/' }
+        maven { url'https://maven.aliyun.com/repository/jcenter/' }
+        maven { url'https://maven.aliyun.com/repository/central/' }
     }
 }
 
