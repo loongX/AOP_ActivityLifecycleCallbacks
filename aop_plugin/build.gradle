@@ -33,6 +33,9 @@ dependencies {
 
 //./gradlew clean build bintrayUpload -PbintrayUser=**** -PbintrayKey=********** -PdryRun=false
 publish {
+//    my_bintrayUser = '123232'
+//    my_bintrayKey = '1232323'
+
     repoName = 'maven' //不写默认也是maven,可以指定为其他
     userOrg = 'xueshanshan'//bintray.com你的用户名
     groupId = 'com.star.plugin'//jcenter上的路径
@@ -40,7 +43,7 @@ publish {
     publishVersion = '0.0.1'//版本号
     desc = 'Aop plugin,简化Aop集成'//描述，不重要
     website = 'https://github.com/xueshanshan'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
-    bintrayUser = "${my_bintrayUser}"
-    bintrayKey = "${my_bintrayKey}"
+//    bintrayUser = "${my_bintrayUser}"
+//    bintrayKey = "${my_bintrayKey}"
     dryRun = false
 }
